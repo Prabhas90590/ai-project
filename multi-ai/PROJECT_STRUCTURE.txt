@@ -1,0 +1,93 @@
+multi-ai/
+|-- backend/
+|   |-- docker-compose.yml
+|   |-- package.json
+|   |-- gateway/
+|   |   |-- index.js
+|   |   |-- package.json
+|   |   |-- controllers/
+|   |   |   `-- user.controller.js
+|   |   |-- middleware/
+|   |   |   `-- auth.middleware.js
+|   |   `-- utils/
+|   |       `-- proxyWithHeader.js
+|   |-- services/
+|   |   |-- agent/
+|   |   |   |-- index.js
+|   |   |   |-- package.json
+|   |   |   |-- agents/
+|   |   |   |   |-- chat.agent.js
+|   |   |   |   |-- coding.agent.js
+|   |   |   |   |-- pdf.agent.js
+|   |   |   |   |-- ppt.agent.js
+|   |   |   |   |-- search.agent.js
+|   |   |   |   `-- vision.agent.js
+|   |   |   |-- config/
+|   |   |   |   |-- db.js
+|   |   |   |   `-- llmModels.js
+|   |   |   |-- controllers/
+|   |   |   |   `-- agent.controller.js
+|   |   |   |-- graph/
+|   |   |   |   |-- graph.js
+|   |   |   |   |-- router.js
+|   |   |   |   `-- state.js
+|   |   |   `-- routes/
+|   |   |       `-- agent.route.js
+|   |   |-- auth/
+|   |   |   |-- index.js
+|   |   |   |-- package.json
+|   |   |   |-- serviceAccountKey.json
+|   |   |   |-- testdb.js
+|   |   |   |-- config/
+|   |   |   |   |-- db.js
+|   |   |   |   `-- firebase.js
+|   |   |   |-- controllers/
+|   |   |   |   `-- auth.controller.js
+|   |   |   |-- models/
+|   |   |   |   `-- user.model.js
+|   |   |   `-- routes/
+|   |   |       `-- auth.route.js
+|   |   |-- chat/
+|   |   |   |-- index.js
+|   |   |   |-- package.json
+|   |   |   |-- config/
+|   |   |   |   `-- db.js
+|   |   |   |-- controllers/
+|   |   |   |   `-- chat.controller.js
+|   |   |   |-- model/
+|   |   |   |   |-- conversation.model.js
+|   |   |   |   `-- message.model.js
+|   |   |   `-- routes/
+|   |   |       `-- chat.route.js
+|   |   `-- shared/
+|   |       `-- redis/
+|   |           `-- redis.js
+|   `-- frontend/
+|       |-- eslint.config.js
+|       |-- index.html
+|       |-- package.json
+|       |-- README.md
+|       |-- vite.config.js
+|       |-- public/
+|       `-- src/
+|           |-- App.jsx
+|           |-- index.css
+|           |-- main.jsx
+|           |-- assets/
+|           |-- components/
+|           |   |-- Artifact.jsx
+|           |   |-- ChatArea.jsx
+|           |   `-- SideBar.jsx
+|           |-- features/
+|           |   |-- createConversation.js
+|           |   |-- getConversations.js
+|           |   `-- getCurrentUser.js
+|           |-- pages/
+|           |   `-- Home.jsx
+|           |-- redux/
+|           |   |-- conversationSlice.js
+|           |   |-- store.js
+|           |   `-- userSlice.js
+|           `-- utils/
+|               |-- axios.js
+|               `-- firebase.js
