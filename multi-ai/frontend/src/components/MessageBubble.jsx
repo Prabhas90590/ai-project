@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MessageBubble() {
+function MessageBubble(role,content) {
   return (
     <div>MessageBubble</div>
   )
